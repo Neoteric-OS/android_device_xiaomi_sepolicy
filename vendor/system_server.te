@@ -17,6 +17,7 @@ hal_client_domain(system_server, vendor_hal_displayfeature_xiaomi)
 
 # Dolby
 allow system_server dvs_aidl_default:binder { call transfer };
+allow system_server hal_aidl_dms_default:process signal;
 hal_client_domain(system_server, hal_dms)
 
 # last_kmsg

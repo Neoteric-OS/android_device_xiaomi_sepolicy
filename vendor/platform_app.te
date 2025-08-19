@@ -45,6 +45,7 @@ get_prop(platform_app, vendor_displayfeature_prop)
 
 # Dolby
 hal_client_domain(platform_app, dvs_aidl)
+hal_client_domain(platform_app, hal_aidl_dms)
 hal_client_domain(platform_app, hal_dms)
 
 # Misys
