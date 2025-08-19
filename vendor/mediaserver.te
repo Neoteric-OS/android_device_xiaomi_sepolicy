@@ -1,1 +1,2 @@
 allow mediaserver sound_device:chr_file rw_file_perms;
+hal_client_domain(mediaserver, dvs_aidl)

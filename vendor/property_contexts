@@ -102,6 +102,10 @@ vendor.hbm.enable                               u:object_r:vendor_displayfeature
 vendor.mi_sf.                                   u:object_r:vendor_displayfeature_prop:s0
 vendor.video.mode.status                        u:object_r:vendor_displayfeature_prop:s0
 
+# Dolby
+persist.vendor.dolbyv.                          u:object_r:vendor_dolbyv_prop:s0
+vendor.dolbyv.                                  u:object_r:vendor_dolbyv_prop:s0
+
 # HVDCP
 ctl.vendor.hvdcp_opti                           u:object_r:vendor_hvdcp_opti_prop:s0
 
