@@ -69,4 +69,5 @@ allow platform_app hal_tidaservice_default:fd *;
 hal_client_domain(platform_app, vendor_hal_soter);
 
 # Touchfeature
+allow platform_app hal_touchfeature_xiaomi_service:service_manager find;
 allow platform_app hal_touchfeature_xiaomi_hwservice:hwservice_manager find;

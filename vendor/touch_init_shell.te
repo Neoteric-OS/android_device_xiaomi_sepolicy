@@ -5,6 +5,8 @@ allow vendor_touch_init_shell vendor_touch_init_shell_exec:file { entrypoint rx_
 allow vendor_touch_init_shell vendor_shell_exec:file { entrypoint rx_file_perms };
 allow vendor_touch_init_shell vendor_toolbox_exec:file rx_file_perms;
 allow vendor_touch_init_shell sysfs:file r_file_perms;
+allow vendor_touch_init_shell vendor_data_touchreport_file:dir { add_name create getattr read remove_name search watch write };
+allow vendor_touch_init_shell vendor_data_touchreport_file:file { append create getattr open read rename setattr unlink write };
 init_daemon_domain(vendor_touch_init_shell)
 set_prop(vendor_touch_init_shell, vendor_panel_info_prop)
 set_prop(vendor_touch_init_shell, vendor_touchfeature_prop)
