@@ -1,5 +1,9 @@
 # Camera
 allow priv_app proc_filesystems:file r_file_perms;
+allow priv_app hal_aidlbgservice_service:service_manager find;
+allow priv_app hal_aidlbgservice:binder { call transfer };
+allow priv_app hal_aidlbgservice:binder transfer;
+allow priv_app hal_aidlbgservice:fd *;
 allow priv_app hal_camera_default:binder { call transfer };
 allow priv_app hal_camera_default:binder transfer;
 allow priv_app hal_camera_default:fd *;
@@ -14,6 +18,7 @@ get_prop(priv_app, vendor_camera_p3enable_prop)
 get_prop(priv_app, vendor_audio_prop)
 get_prop(priv_app, vendor_display_prop)
 get_prop(priv_app, vendor_displayfeature_prop)
+hal_client_domain(priv_app, hal_aidlbgservice)
 hal_client_domain(priv_app, hal_misys)
 hal_client_domain(priv_app, vendor_hal_camerapostproc_xiaomi)
 hal_client_domain(priv_app, hal_quickcamera)

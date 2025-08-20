@@ -11,6 +11,10 @@ get_prop(platform_app, vendor_audio_prop)
 allow platform_app adsprpcd_file:dir { getattr search };
 allow platform_app adsprpcd_file:file { getattr open read };
 allow platform_app app_data_file:file execute;
+allow platform_app hal_aidlbgservice_service:service_manager find;
+allow platform_app hal_aidlbgservice:binder { call transfer };
+allow platform_app hal_aidlbgservice:binder transfer;
+allow platform_app hal_aidlbgservice:fd *;
 allow platform_app hal_camera_default:binder { call transfer };
 allow platform_app hal_camera_default:binder transfer;
 allow platform_app hal_camera_default:fd *;
@@ -34,6 +38,7 @@ get_prop(platform_app, vendor_camera_p3enable_prop)
 get_prop(platform_app, vendor_camera_prop)
 get_prop(platform_app, vendor_display_prop)
 get_prop(platform_app, vendor_panel_info_prop)
+hal_client_domain(platform_app, hal_aidlbgservice)
 hal_client_domain(platform_app, hal_misys)
 hal_client_domain(platform_app, vendor_hal_camerapostproc_xiaomi)
 hal_client_domain(platform_app, hal_quickcamera)
