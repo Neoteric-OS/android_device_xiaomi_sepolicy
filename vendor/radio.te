@@ -8,3 +8,8 @@ allow radio vendor_hal_latency_hwservice:hwservice_manager find;
 allow radio vendor_cnd:binder { call transfer };
 allow radio vendor_cnd:fd *;
 get_prop(radio, vendor_audio_prop)
+
+# Sensors
+hal_client_domain(radio, vendor_hal_citsensorservice_xiaomi)
+allow radio vendor_hal_citsensorservice_xiaomi_service:service_manager find;
+allow radio vendor_hal_citsensorservice_xiaomi_default:binder call;
