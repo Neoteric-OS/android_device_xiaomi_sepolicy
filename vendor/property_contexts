@@ -114,10 +114,14 @@ ctl.vendor.hvdcp_opti                           u:object_r:vendor_hvdcp_opti_pro
 # Mlipay
 persist.vendor.sys.pay.fido                     u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.pay.fido2                    u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.fido2pass                u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.pay.ifaa                     u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.pay.soter                    u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.pay.widevine                 u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.provision.status             u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.rkp.status                   u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.strongbox_upgrade.status     u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.wv_rkp.status                u:object_r:vendor_payment_security_prop:s0
 
 # NFC
 persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
