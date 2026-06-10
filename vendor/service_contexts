@@ -1,6 +1,7 @@
 # Camera
 android.hardware.camera.provider.ICameraProvider/vendor_qti/0 u:object_r:hal_camera_service:s0
 vendor.xiaomi.hardware.aidlbgservice.IBGService/default u:object_r:hal_aidlbgservice_service:s0
+vendor.xiaomi.hardware.quickcamera.IQuickCameraService/default u:object_r:hal_quickcamera_service:s0
 
 # Displayfeature
 vendor.xiaomi.hardware.display.mihwcextension.IMiHwcExtension/default u:object_r:vendor_hal_hwcextension_xiaomi_service:s0
@@ -18,6 +19,12 @@ vendor.xiaomi.hardware.aidl.tidaservice.ITidaService/default u:object_r:hal_tida
 
 # Sensors
 vendor.xiaomi.sensor.citsensorservice.ICitSensorService/default u:object_r:vendor_hal_citsensorservice_xiaomi_service:s0
+vendor.xiaomi.sensor.tofsensorservice.ITofSensorService/default u:object_r:vendor_hal_tofsensorservice_xiaomi_service:s0
 
 # Touchfeature
 vendor.xiaomi.hw.touchfeature.ITouchFeature/default u:object_r:hal_touchfeature_xiaomi_service:s0
+
+# Misys vendor AIDL
+vendor.xiaomi.hardware.misys.common.IMiSysImpl/default u:object_r:hal_misys_vendor_service:s0
+vendor.xiaomi.hardware.blackbox.IBlackboxImpl/default u:object_r:hal_misys_vendor_service:s0
+vendor.xiaomi.hardware.misys.common.IHypSysIntl/default u:object_r:hal_misys_vendor_service:s0

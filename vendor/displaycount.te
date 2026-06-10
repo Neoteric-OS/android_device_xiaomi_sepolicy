@@ -11,6 +11,5 @@ allow vendor_displaycount device:dir write;
 allow vendor_displaycount graphics_device:chr_file rw_file_perms;
 allow vendor_displaycount graphics_device:dir r_dir_perms;
 init_daemon_domain(vendor_displaycount)
-r_dir_file(vendor_displaycount, sysfs_type)
 r_dir_file(vendor_displaycount, rootfs)
 r_dir_file(vendor_displaycount, cgroup)
