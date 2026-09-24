@@ -31,7 +31,7 @@ allow hal_misys_default vendor_data_file:file { create getattr open read setattr
 allow hal_misys_default vendor_data_file:dir { add_name write };
 allow hal_misys_default vendor_audio_data_file:dir create_dir_perms;
 allow hal_misys_default vendor_audio_data_file:file create_file_perms;
-allow hal_misys_default platform_app:binder transfer;
+allow hal_misys_default platform_app_all:binder transfer;
 allow hal_misys_default hidl_memory_hwservice:hwservice_manager find;
 allow hal_misys_default system_app:binder transfer;
 allow hal_misys_default hal_allocator_server:binder call;

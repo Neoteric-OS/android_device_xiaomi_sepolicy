@@ -23,7 +23,7 @@ allow hal_tidaservice_default firmware_file:file r_file_perms;
 allow hal_tidaservice_default ion_device:chr_file rw_file_perms;
 allow hal_tidaservice_default rootfs:lnk_file r_file_perms;
 allow hal_tidaservice_default hal_mtdservice_hwservice:hwservice_manager find;
-allow hal_tidaservice_default platform_app:binder transfer;
+allow hal_tidaservice_default platform_app_all:binder transfer;
 allow hal_tidaservice_default sysfs:dir { open read };
 allow hal_tidaservice_default sysfs:file { open read write };
 allow hal_tidaservice_default vendor_dmabuf_qseecom_heap_device:chr_file { ioctl open read };

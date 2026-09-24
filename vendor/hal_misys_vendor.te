@@ -6,6 +6,7 @@ type hal_misys_vendor_service, hal_service_type, protected_service, service_mana
 
 hal_server_domain(hal_misys_default, hal_misys_vendor)
 hal_client_domain(platform_app, hal_misys_vendor)
+hal_client_domain(platform_app_36, hal_misys_vendor)
 
 binder_call(hal_misys_vendor_client, hal_misys_vendor_server)
 add_service(hal_misys_vendor_server, hal_misys_vendor_service)

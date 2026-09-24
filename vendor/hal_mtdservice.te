@@ -34,7 +34,7 @@ allow hal_mtdservice_default tee_device:chr_file rw_file_perms;
 allow hal_mtdservice_default system_data_file:dir getattr;
 allow hal_mtdservice_default hal_mlipay_hwservice:hwservice_manager find;
 allow hal_mtdservice_default hal_mfidoca_hwservice:hwservice_manager find;
-allow hal_mtdservice_default platform_app:binder transfer;
+allow hal_mtdservice_default platform_app_all:binder transfer;
 allow hal_mtdservice_default system_app:binder transfer;
 #allow hal_mtdservice_default ta_data_file:file create_file_perms;
 #allow hal_mtdservice_default ta_data_file:dir rw_dir_perms;

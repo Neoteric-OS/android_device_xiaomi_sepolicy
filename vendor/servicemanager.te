@@ -1,0 +1,2 @@
+# poweroptservice uses registerForNotifications(), which needs a callback into it.
+allow servicemanager vendor_hal_poweroptservice_qti:binder call;
